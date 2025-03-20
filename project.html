@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cart value</title>
+</head>
+
+<body>
+  <button onclick=" 
+  console.log(`cartquantity:${cartQuantity}`);">show cart</button>
+
+  <button onclick="
+  cartQuantity++;
+  console.log(`cartquantity:${cartQuantity}`);">add cart</button>
+  <button onclick="
+  cartQuantity +=2;
+  console.log(`cartquamtity:${cartQuantity}`);">+2</button>
+
+  <button onclick="
+  cartQuantity +=3;
+console.log(`cartquamtity:${cartQuantity}`);">+3</button>
+  <button onclick="
+  cartQuantity +=4;
+  console.log(`cartquamtity:${cartQuantity}`);">+4</button>
+
+<button onclick="
+cartQuantity +=5;
+console.log(`cartquantity:${cartQuantity}`);">+5</button>
+
+<button onclick="
+removefromcart=-2
+console.log(`removefromcart:${removefromcart}`);">-2</button>
+
+<button onclick="
+removefromcart=-3
+console.log(`removefromcart:${removefromcart}`);">-3</button>
+
+
+  <script>
+    let cartQuantity = 0; 
+    let removefromcart=-1;
+  </script>
+</body>
+
+</html>
