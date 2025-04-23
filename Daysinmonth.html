@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>example of days in month</title>
+</head>
+<body>
+  <h1>Get days in month</h1>
+  <script>
+    let month=prompt("enter month number(1-12):");
+    let days;
+    switch(month){
+      case "1":
+      case "3":
+      case "5":
+      case "7":
+      case "8":
+      case "10":
+      case "12":
+        days=31;
+        break;
+        
+        case "4":
+        case "6":
+        case "9":
+        case "11":
+        days=30;
+        break;
+
+        case "2":
+          days="28 or 29 (leap year)";
+          break;
+
+          default:
+            days="invalid month number";
+    }
+            document.write("days in month :"+ days);
+    
+  </script>
+</body>
+</html>
